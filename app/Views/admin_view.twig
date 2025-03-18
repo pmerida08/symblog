@@ -1,0 +1,14 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <p>
+    <a href="/addblog">Añadir blog</a>
+  </p>
+  <p>
+    <a href="/adduser">Añadir usuario</a>
+  </p>
+{% endblock %}
+
+{% block sidebar %}
+  {{ include('sidebar.twig', { tags: tags, allComments: data.comments }) }}
+{% endblock %}

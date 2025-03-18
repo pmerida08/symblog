@@ -1,0 +1,10 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+    <h2>About Symblog</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ipsam autem sunt aut quo repudiandae necessitatibus corporis dolores quibusdam incidunt laudantium vero ex ullam placeat, voluptates, blanditiis, sint minus asperiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, explicabo ut placeat natus rerum nostrum deleniti architecto ab dolorum eum harum assumenda suscipit tempora saepe laboriosam non perspiciatis adipisci laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit amet aperiam, quas, velit saepe quos quaerat ipsum, laborum voluptatem libero exercitationem? Maiores, excepturi! Quia delectus voluptatibus hic, ipsam debitis reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores veritatis nulla sit impedit possimus molestias repudiandae fuga recusandae similique vero et illo pariatur dolore incidunt id ad mollitia, adipisci autem.</p>
+{% endblock %}
+
+{% block sidebar %}
+    {{ include("sidebar.twig", { tags: tags, allComments: data.comments }) }}
+{% endblock %}
